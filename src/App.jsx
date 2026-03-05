@@ -6,6 +6,7 @@ function App() {
   const [formData, setFormData] = useState({
     name: "",
     email: "",
+    attendees: "",
     attending: ""
   });
 
@@ -13,9 +14,10 @@ function App() {
   const [currentBannerIndex, setCurrentBannerIndex] = useState(0);
 
   const bannerImages = [
+    "FAM1.PNG",
+    "MITHRA3.PNG",
     "Mithra1.PNG",
     "Mithra2.jpg",
-    "Mithra3.jpg",
     "Mithra4.PNG"
   ];
 
@@ -42,6 +44,7 @@ function App() {
       {
         to_name: formData.name,
         to_email: formData.email,
+        attendees: formData.attendees,
         attending: formData.attending
       },
       "Ip-rA3SasTbJSBoAe"
@@ -87,7 +90,7 @@ function App() {
         </div>
 
         <h1>🦄 Mithra's Magical Unicorn Birthday Party ✨</h1>
-        <p>A magical playground where kids & grownups can play, laugh & make unforgettable memories together! 🌈🎉</p>
+        <p>I'm turning 5 and I want to enjoy magical playtime with all my favorite kids and grownups! Let's create unforgettable memories together! 🌈🎉</p>
 
         <div className="event-details">
           <div className="detail-item">
@@ -95,8 +98,17 @@ function App() {
             <span>March 26, 2026</span>
           </div>
           <div className="detail-item">
-            <span className="detail-label">⏰ Time:</span>
-            <span>6:00 PM - 10:00 PM</span>
+            <span className="detail-label">⏰ Magical Schedule:</span>
+            <div className="timeline">
+              <div className="timeline-item">
+                <span className="timeline-time">✨ Magical Playtime:</span>
+                <span>6:00 PM - 7:30 PM</span>
+              </div>
+              <div className="timeline-item">
+                <span className="timeline-time">🦄 Cake Magic & Feast:</span>
+                <span>7:30 PM</span>
+              </div>
+            </div>
           </div>
           <div className="detail-item">
             <span className="detail-label">📍 Location:</span>
@@ -135,9 +147,19 @@ function App() {
               required
               onChange={handleChange}
             />
+            
+            <input
+              type="number"
+              name="attendees"
+              placeholder="How many magical guests?"
+              min="1"
+              max="10"
+              required
+              onChange={handleChange}
+            />
 
             <select name="attending" required onChange={handleChange}>
-              <option value="">Will you attend?</option>
+              <option value="">Will you join the magic? ✨</option>
               <option value="Yes">Yes, with sparkle ✨</option>
               <option value="No">Sorry, can't make it 💔</option>
             </select>

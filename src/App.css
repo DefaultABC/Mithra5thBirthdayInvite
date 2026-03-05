@@ -287,15 +287,33 @@ button:hover {
   transform: scale(1.05);
 }
 
-.count {
+.timeline {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-top: 5px;
+}
+
+.timeline-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 0;
+  border-left: 3px solid #ff6ec4;
+  padding-left: 12px;
+  background: rgba(255, 110, 196, 0.1);
+  border-radius: 8px;
+}
+
+.timeline-time {
   font-weight: bold;
-  margin-bottom: 15px;
-  background: linear-gradient(45deg, #ff6ec4, #7873f5, #ff1493);
-  background-size: 200% 200%;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-  animation: shimmer 2s ease infinite;
+  color: #ff6ec4;
+  font-size: 14px;
+}
+
+.timeline-item span:last-child {
+  color: #333;
+  font-weight: 500;
 }
 
 .event-details {
