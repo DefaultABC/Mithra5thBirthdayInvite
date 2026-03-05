@@ -1,0 +1,97 @@
+<svg width="1920" height="1080" viewBox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background gradient -->
+  <defs>
+    <linearGradient id="skyGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#FFB6F9;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#87CEEB;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#FFE6F0;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="unicornGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#FF69B4;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#FFB6F9;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#DDA0DD;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Sky background -->
+  <rect width="1920" height="1080" fill="url(#skyGradient)"/>
+  
+  <!-- Clouds -->
+  <ellipse cx="300" cy="200" rx="150" ry="80" fill="white" opacity="0.7"/>
+  <ellipse cx="400" cy="180" rx="120" ry="70" fill="white" opacity="0.6"/>
+  <ellipse cx="1600" cy="250" rx="180" ry="90" fill="white" opacity="0.7"/>
+  <ellipse cx="1720" cy="230" rx="140" ry="75" fill="white" opacity="0.6"/>
+  
+  <!-- Stars/sparkles -->
+  <circle cx="200" cy="150" r="4" fill="#FFD700"/>
+  <circle cx="1700" cy="300" r="3" fill="#FFD700"/>
+  <circle cx="400" cy="100" r="3" fill="#FFD700"/>
+  <circle cx="1500" cy="150" r="4" fill="#FFD700"/>
+  
+  <!-- Unicorn body -->
+  <ellipse cx="960" cy="650" rx="200" ry="150" fill="url(#unicornGradient)"/>
+  
+  <!-- Unicorn neck -->
+  <ellipse cx="950" cy="500" rx="90" ry="160" fill="url(#unicornGradient)"/>
+  
+  <!-- Unicorn head -->
+  <circle cx="950" cy="280" r="120" fill="url(#unicornGradient)"/>
+  
+  <!-- Horn -->
+  <polygon points="950,150 930,100 970,100" fill="#FFD700"/>
+  <polygon points="950,150 935,105 965,105" fill="#FFF8DC"/>
+  
+  <!-- Horn shine -->
+  <line x1="950" y1="150" x2="950" y2="100" stroke="#FFFF00" stroke-width="3" opacity="0.6"/>
+  
+  <!-- Ears -->
+  <ellipse cx="900" cy="220" rx="40" ry="70" fill="url(#unicornGradient)"/>
+  <ellipse cx="1000" cy="220" rx="40" ry="70" fill="url(#unicornGradient)"/>
+  <ellipse cx="900" cy="240" rx="20" ry="40" fill="#FFE6F0"/>
+  <ellipse cx="1000" cy="240" rx="20" ry="40" fill="#FFE6F0"/>
+  
+  <!-- Eyes -->
+  <circle cx="920" cy="260" r="15" fill="white"/>
+  <circle cx="980" cy="260" r="15" fill="white"/>
+  <circle cx="922" cy="260" r="8" fill="#4B0082"/>
+  <circle cx="982" cy="260" r="8" fill="#4B0082"/>
+  <circle cx="924" cy="258" r="4" fill="white"/>
+  <circle cx="984" cy="258" r="4" fill="white"/>
+  
+  <!-- Snout -->
+  <ellipse cx="950" cy="320" rx="60" ry="50" fill="#FFE6F0"/>
+  
+  <!-- Nose -->
+  <ellipse cx="950" cy="330" rx="20" ry="15" fill="#FF69B4"/>
+  
+  <!-- Mane -->
+  <path d="M 900 180 Q 880 160 870 140 Q 890 175 910 200" fill="#FF1493" opacity="0.8"/>
+  <path d="M 930 150 Q 910 120 900 90 Q 920 155 940 190" fill="#FF69B4" opacity="0.8"/>
+  <path d="M 960 145 Q 940 110 930 80 Q 955 150 970 190" fill="#FF1493" opacity="0.8"/>
+  <path d="M 990 150 Q 1010 120 1020 90 Q 1000 155 980 190" fill="#FF69B4" opacity="0.8"/>
+  <path d="M 1020 180 Q 1040 160 1050 140 Q 1030 175 1010 200" fill="#FF1493" opacity="0.8"/>
+  
+  <!-- Front legs -->
+  <rect x="880" y="750" width="50" height="200" rx="25" fill="url(#unicornGradient)"/>
+  <rect x="1000" y="750" width="50" height="200" rx="25" fill="url(#unicornGradient)"/>
+  
+  <!-- Back legs -->
+  <rect x="800" y="750" width="50" height="200" rx="25" fill="url(#unicornGradient)"/>
+  <rect x="1080" y="750" width="50" height="200" rx="25" fill="url(#unicornGradient)"/>
+  
+  <!-- Tail -->
+  <path d="M 1160 620 Q 1250 600 1280 700 Q 1260 750 1200 740 Q 1130 730 1160 620" fill="#FF1493" opacity="0.9"/>
+  <path d="M 1170 630 Q 1280 620 1300 710 Q 1270 760 1200 750" fill="#FF69B4" opacity="0.8"/>
+  
+  <!-- Hooves -->
+  <rect x="880" y="940" width="50" height="40" fill="#8B4513"/>
+  <rect x="1000" y="940" width="50" height="40" fill="#8B4513"/>
+  <rect x="800" y="940" width="50" height="40" fill="#8B4513"/>
+  <rect x="1080" y="940" width="50" height="40" fill="#8B4513"/>
+  
+  <!-- Magical sparkles around unicorn -->
+  <circle cx="1150" cy="400" r="3" fill="#FFD700" opacity="0.8"/>
+  <circle cx="700" cy="450" r="2" fill="#FFD700" opacity="0.7"/>
+  <circle cx="1250" cy="300" r="2" fill="#FFD700" opacity="0.7"/>
+  <circle cx="750" cy="350" r="3" fill="#FFD700" opacity="0.8"/>
+</svg>
