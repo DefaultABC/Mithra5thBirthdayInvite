@@ -114,6 +114,7 @@ p:not(.count) {
   border-radius: 15px;
   margin-bottom: 20px;
   box-shadow: 0 8px 25px rgba(255, 110, 196, 0.3);
+  background: linear-gradient(135deg, #87CEEB 0%, #FFB6F9 50%, #FF69B4 100%);
 }
 
 .banner-slider {
@@ -132,17 +133,22 @@ p:not(.count) {
 .banner-image {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: contain;
+  object-position: center;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   border-radius: 15px;
 }
 
 .banner-overlay {
   position: absolute;
-  top: 0;
+  top: 10;
   left: 0;
   right: 0;
   bottom: 0;
-  background: linear-gradient(45deg, rgba(255, 110, 196, 0.7), rgba(120, 115, 245, 0.7));
+  /* removed colored overlay for clearer images */
+  background: transparent;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -150,11 +156,11 @@ p:not(.count) {
 }
 
 .banner-title {
-  color: white;
+  color: whitesmoke;
   font-size: 24px;
   font-weight: bold;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-  text-align: center;
+  text-align: bottom;
   animation: titleGlow 2s ease infinite;
 }
 

@@ -13,11 +13,10 @@ function App() {
   const [currentBannerIndex, setCurrentBannerIndex] = useState(0);
 
   const bannerImages = [
-    "https://images.unsplash.com/photo-1518837695005-2083093ee35b?w=800&h=400&fit=crop",
-    "https://images.unsplash.com/photo-1465146344425-f00d5f5c8f07?w=800&h=400&fit=crop",
-    "https://images.unsplash.com/photo-1513151233558-d860c5398176?w=800&h=400&fit=crop",
-    "https://images.unsplash.com/photo-1544717297-fa95b6ee9643?w=800&h=400&fit=crop",
-    "https://images.unsplash.com/photo-1514525253161-7a46d19cd819?w=800&h=400&fit=crop"
+    "Mithra1.PNG",
+    "Mithra2.jpg",
+    "Mithra3.jpg",
+    "Mithra4.PNG"
   ];
 
   useEffect(() => {
@@ -54,7 +53,7 @@ function App() {
   return (
     <div className="background">
       <audio autoPlay loop>
-        <source src="/unicorn-music.mp3" type="audio/mp3" />
+        <source src="unicorn-music.mp3" type="audio/mp3" />
       </audio>
 
       <div className="invite-card">
@@ -71,7 +70,7 @@ function App() {
                   }}
                 />
                 <div className="banner-overlay">
-                  <h2 className="banner-title">🦄 Mithra's Magical Birthday 🦄</h2>
+                  <h2 className="banner-title">🦄 I am turning 5! 🦄</h2>
                 </div>
               </div>
             ))}
